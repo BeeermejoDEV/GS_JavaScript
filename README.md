@@ -28,6 +28,3 @@ con cafés de por medio ☕ y muchos <code>console.log()</code> en el camino.
 Vamos a <strong>programar, aprender y reírnos</strong> del caos juntos. 💪👨‍💻👩‍💻  
 </p>
 
-<p align="center">
-<a href="#">&lt; ¡Empieza aquí! /&gt;</a>
-</p>
