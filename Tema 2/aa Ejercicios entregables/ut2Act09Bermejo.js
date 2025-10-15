@@ -1,6 +1,6 @@
 // ut2Act09Bermejo.js
 /*
-FASE 1:
+FASE 1: prueba
 Función calcularValorPiezas(tablero)
 - Recibe un array de piezas (["♕", "♖", "♙", "♘"])
 - Devuelve el valor total según la tabla
