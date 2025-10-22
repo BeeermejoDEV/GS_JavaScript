@@ -4,7 +4,7 @@
 // sinMovimientos ¿El rey no tiene movimientos legales?
 
 let turno = "blancas";       // puedes cambiarlo a "negras" para probar
-let enJaque = true;          // true o false
+let enJaque = true;          // true o false PRUEBA
 let sinMovimientos = false;  // true o false
 
 /**
