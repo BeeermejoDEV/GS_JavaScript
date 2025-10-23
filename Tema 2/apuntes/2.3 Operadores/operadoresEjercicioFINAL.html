@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            🚀 Mini desafío Día 3
+
+            Pide dos números con prompt().
+
+            Muestra sus suma, resta, multiplicación y división.
+
+            Pregunta si quiere ver el mayor o el menor.
+
+            Usa un operador ternario para mostrar el resultado.
+
+            Si alguno no es número, muestra “Entrada inválida”.
+        */
+
+
+        n1= prompt ("Introduzca el valor de n1: ")
+        n2= prompt ("Introduzca el valor de n2: ")
+        pregunta= prompt ("¿Deseas ver el mayor o el menor?");
+
+        suma= n1+n2;
+        resta= n1+n2;
+        multiplicacion= n1*n2;
+        division= n1/n2;
+
+        console.log(suma);
+        console.log(resta);
+        console.log(multiplicacion);
+        console.log(division);
+
+
+
+        
+        decision= pregunta !="mayor" ?  (`es mas pequeño ${n2} que el ${n1}`): (`es mas pequeño ${n1} que el ${n2}`);
+        console.log(decision);
+
+
+        sonNumeros= typeof(n1)=== typeof(n2)?"son numeros los dos": "Error, uno no es numero";
+        console.log(sonNumeros);
+
+
+
+    </script>
+    
+</body>
+</html>
