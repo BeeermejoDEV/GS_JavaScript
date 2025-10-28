@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        🧩 Ejercicio 1 — Calor o frío
+            Pide una temperatura por prompt() y muestra:
+
+            “Hace calor 🥵” si es mayor de 25
+            “Está templado 😌” si está entre 15 y 25
+            “Hace frío 🥶” si es menor de 15
+
+            👉 Usa if, else if, else
+*/
+        let temperatura =0;
+        temperatura = prompt("Introduzca la temperatura que hace hoy: \n");
+
+        console.log(temperatura)
+
+
+        if (temperatura<15){ //en caso de que sea MENOR a 15
+            console.log(`Hace frio!!! concretamente ${temperatura}`);
+        }else if(temperatura>25){ //caso de que sea MAYOR que 25
+            console.log(`Hace calor!!! concretamente ${temperatura}`)
+        }else{  //caso de que sea menor/igual o mayor/igual
+            console.log(`Se esta genial! hace una temperatura de ${temperatura}`)
+        }
+
+
+
+    </script>
+</body>
+</html>
