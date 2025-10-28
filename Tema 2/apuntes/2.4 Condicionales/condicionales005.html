@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let pieza = prompt("Introduce una pieza de ajedrez:").toLowerCase();
+
+        if (pieza === "peon") {
+        console.log("Avanza una casilla hacia adelante");
+        } else if (pieza === "torre") {
+        console.log("Se mueve en líneas rectas");
+        } else if (pieza === "alfil") {
+        console.log("Se mueve en diagonal");
+        } else if (pieza === "reina") {
+        console.log("Se mueve en todas las direcciones");
+        } else {
+        console.log("Pieza no reconocida 😅");
+        }
+
+    </script>
+    
+</body>
+</html>
