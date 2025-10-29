@@ -16,6 +16,23 @@
 
             👉 Después, reházlo usando solo el operador ternario.
                     */
+
+        
+        let edad = Number(prompt("Escribe tu edad: \n")) //Aqui pedimos al usuario que meta un numero
+
+        if (edad>=18){
+            console.log(`Tienes ${edad} años. Eres mayor de edad`);//valoramos si es mayor/igual a 18
+        }else{
+            console.log(`Tienes ${edad} años. Eres menor de edad`); //caso contrario
+        }
+
+        let mensaje = edad>=18  //lo mismo, pero con un operador ternario. Mas compacto y se ve mas profesional
+        ?`Tienes ${edad} años. Eres mayor de edad`
+        :`Tienes ${edad} años. Eres menor de edad`;
+
+        console.log(mensaje);
+
+
     </script>
     
 </body>

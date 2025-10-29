@@ -19,6 +19,24 @@
             == devuelve: true
             === devuelve: false
 */
+
+        valorUsu1= Number(prompt("Introduce un valor1: \n"));
+        valorUsu2= Number(prompt ("Introduce un valor2: \n"));
+
+        resultado   =false;
+        resultado2 = false;
+
+        if (valorUsu1 == valorUsu2){
+            resultado= true;
+        }
+        
+        if( valorUsu1 === valorUsu2){
+            resultado2=true;
+        }
+
+        console.log(`Son iguales de valor (==): ${resultado}`)
+        console.log(`Son iguales en valor y tipo(===): ${resultado2}`)
+
     </script>
     
 </body>
