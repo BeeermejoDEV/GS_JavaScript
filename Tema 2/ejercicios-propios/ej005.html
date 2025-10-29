@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        /*
+        🚀 Ejercicio 6 — 
+        Mayor de tres números Pide tres números por prompt() y muestra cuál es el mayor. 
+        
+        👉 Solo con if y else if. 
+        Ejemplo: Introduce tres números: 5, 9, 2 ➡️ El mayor es 9*/
+
+
+        let num1= Number(prompt("Introduce el primer numero"));
+        let num2= Number(prompt("Introduce el segundo numero"));
+        let num3= Number(prompt("Introduce el tercer numero"));
+
+        let mensaje1 = num1>num2 && num1>num3 ?`El numero ${num1} es mayor que ${num2} y ${num3}`:``;   //caso num1 mayor
+
+        let mensaje2= num2>num1 && num2>num3 ?`El numero ${num2} es mayor que ${num1} y ${num3}`:``;    // caso num2 mayor
+
+        let mensaje3= num3>num1 && num3>num2 ?`El numero ${num3} es mayor que ${num1} y ${num2}`:``;    //caso num3 mayor
+
+        
+        //me faltaron casos de igualdad!!!
+         
+        let mensaje4= num1===num2 && num1===num3 ?`Todos los numeros son iguales!!!!`:``;
+
+        
+        
+
+        console.log(mensaje1,mensaje2, mensaje3, mensaje4);
+
+
+    </script>
+    
+</body>
+</html>
