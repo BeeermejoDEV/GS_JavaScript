@@ -7,21 +7,51 @@
 </head>
 <body>
     <script>
-        /*estructura de FOR:
-            for (let x= inicio; x<= FINAL; i++){
-            }
+    //     /*estructura de FOR:
+    //         for (let x= inicio; x<= FINAL; i++){
+    //         }
 
-        */
-       //Ejemplo rapido.
+    //     */
+    //    //Ejemplo rapido.
 
-       // 1 a 5:
-       for (let i=1; i<=5; i++) console.log (i)
+    //    // 1 a 5:
+    //    for (let i=1; i<=5; i++) console.log (i)
 
-       //recorrer array:
-       const frutas = ["manzana", "pera", "platano"]
-       for (let i=0; i<frutas.length; i++){
-        console.log (`Fruta: ${frutas[i]}` )
-       }
+    //    //recorrer array:
+    //    const frutas = ["manzana", "pera", "platano"]
+    //    for (let i=0; i<frutas.length; i++){
+    //     console.log (`Fruta: ${frutas[i]}` )
+    //    }
+
+    //    //ejemplo practicar:
+    const temps = [18, 22, 27, 15, 30, 24];
+
+
+    let max = temps[0]; //creamos una variable max que tiene el valor temp[0]
+    let min = temps[0];//creamos una variable min que tiene el valor temp[0]
+    let comparacion =0;
+    let suma =0;
+    
+    for (let z=0; z<temps.length; z++){
+        console.log(temps[z])
+
+        if (temps[z]>=max) max= temps[z]; 
+        //esto compara la temp con la max y si es mayor la guarda
+        
+        
+        if (temps[z]<=min) min= temps[z];
+        //esto compara la temp con la min y si es menor la guarda
+
+        suma = suma + temps[z]; //actualiza la suma del total
+        media = suma/temps.length
+
+        if (temps[z]>20) comparacion++; //creamos contador que suma solo cuando queremos
+    }
+
+    console.log("Máximo:", max);
+    console.log("Mínimo:", min);
+    console.log(media)
+    console.log(`Hay ${comparacion} temperaturas que superen los 20 grados`)
     </script>
 </body>
 </html>
