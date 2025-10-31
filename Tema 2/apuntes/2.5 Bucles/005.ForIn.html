@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //For ... In... Sirve para recorrer claves de un OBJETO:
+
+        /*Sintaxis:
+            for (let clave in objeto){
+                //codigo:
+            }
+
+        */
+
+        //ejemplo:
+
+        // const persona ={
+        //     nombre: "David",
+        //     edad:   23,
+        //     pais:   "España"
+        // };
+
+        // for (let clave in persona){
+        //     console.log (`${clave}: ${persona[clave]}`)
+        // }
+
+
+        // //For ... of ... Sirve para recorrer Strings, mapas,etc
+
+        // /*
+        //     for (let valor of iterable) {
+        //         // código
+        //     }
+        // */
+
+        // const colores = ["rojo", "verde", "azul"];
+
+        //     for (let color of colores) {
+        //         console.log(color);
+        //     }
+
+        //     console.log("______________--")
+            
+        //     let palabraUsu = prompt ("Introduzca una palabra: ")
+        //     for (let letra of palabraUsu) {
+        //         console.log(letra);
+        //     }
+
+
+
+
+            /*
+                🧩 1. Con for...in
+                Crea un objeto coche con:
+
+                marca
+                modelo
+                año
+                color
+
+                ➡️ Recorre todas sus propiedades y muestra cada par clave: valor en consola.
+            */
+
+
+            const coche ={
+                marca:      "BMW",
+                modelo:     "seria A",
+                año:        2018,
+                color:      "Rojo"
+
+            }
+
+
+            for (let dato in coche){
+                console.log(` ${dato} : ${coche[dato]}`)
+            }
+
+
+            /*
+                🧩 2. Con for...of
+
+                    Crea un array precios = [100, 200, 300, 150]
+                    ➡️ Recorre los valores con for...of,
+                    suma todos los precios y muestra la suma total en consola.
+            */
+
+
+            const precios =[100, 200, 300, 150]
+            let total =0;
+            for (let precio of precios){
+                console.log (`El precio es de: ${precio}`)
+                total= total + precio;
+            }
+
+            console.log (`El precio total del inventario es de: ${total} euros`)
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
