@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        /*
+            Do while
+
+            La unica diferencia es que ejecuta al menos 1 vez la instruccion y luego ve si es viable.
+
+
+            do{
+                //codigo a ejecutar 
+            }while(condicion)
+        
+        */
+
+        let x=5;
+        do{
+            console.log("el numero es: ", x)
+        }while(x!=5)
+
+        //es igual a 5 por lo que el bucle se apaga, pero se ejecuta 1 vez
+
+        //Menú simple que se repite hasta elegir “Salir”
+        // let continuar;  //Creamos variable continuar
+        // do {
+        //     continuar = prompt( //pedimos al usuario que nos diga que queremos hacer ahora:
+        //         "MENÚ PRINCIPAL\n1. Saludar\n2. Decir hora\n3. Salir"
+        //     ); //guardamos su decision
+
+        //     if (continuar =="1 "){ //si es ==1 hace:
+        //         alert ("Hola!! ¿Que tal estas?")
+        //     }else if(continuar =="2 "){ //si es ==2 hace:
+        //         alert (`Son las ${new Date().toLocaleTimeString()}`)
+        //     }else if( continuar != "3")   { //si es != 3 hace:
+        //         alert ("Opcion no valida.")
+        //     }
+        // }while (continuar !=="3") //mientras que no sea 3 vuelve al bucle
+
+
+
+        /*
+        Crea un programa con do...while que simule una calculadora sencilla:
+            // 1️⃣ Muestra un menú con estas opciones:
+            2️⃣ Pide dos números (solo si no elige “Salir”).
+            3️⃣ Realiza la operación elegida con switch o if.
+            4️⃣ Muestra el resultado con alert() o console.log().
+            5️⃣ Se repite hasta que el usuario elija “5”.
+            */
+
+            //CALCULADORA SENCILLA:
+
+            let decisionUsuario
+
+
+            do{
+                decisionUsuario= prompt ("Introduzca: \n 1. SUMAR \n 2. Restar \n 3.Multiplicar \n 4.Dividir \n 5.Salir de la calcualdora ")
+                if (decisionUsuario >=1 && decisionUsuario<5){
+                    let num1 = Number(prompt ("Introduzca el primer numero"))
+                    let num2 = Number(prompt ("Introduzca el segundo numero"))
+                    let resultado=0;
+
+                    if (decisionUsuario =="1"){
+                        resultado=num1 +num2;
+                        alert (`El resultado de la suma es: ${resultado}`)
+                    }else if (decisionUsuario =="2"){
+                        resultado=num1 - num2;
+                        alert (`El resultado de la resta es: ${resultado}`)
+
+                    }else if (decisionUsuario =="3"){
+                        resultado=num1 *num2;
+                        alert (`El resultado de la multiplicacion es: ${resultado}`)
+                    }else if (decisionUsuario =="4"){
+                        if (num2 !="0"){
+                            resultado=num1 /num2;
+                            alert (`El resultado de la division es: ${resultado}`)
+                        }else{
+                            alert("Division imposible!!! no se puede dividir entre 0")
+                        }
+                            
+                    }else{
+                    alert("Ha introducido un valor no valido. Vuelva a intentarlo")
+                    }
+                }
+        }while (decisionUsuario !="5")
+
+        alert("SALIENDO DEL SISTEMA....\nSALIDA CON EXITO")
+
+
+    </script>
+    
+</body>
+</html>
