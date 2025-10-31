@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        /*
+            while (condicion){
+                codigo a ejecutar!
+                Condicion= false para cerrar bucle.
+            }
+        
+        
+        */
+
+        //Ejercicio resuelto que solicita contraseña con 3 intentos como máximo:
+        const password= "1234"
+        let intentos =0;
+        let confirmacion = false;
+
+
+        while (intentos < 3 && !confirmacion){
+            const entradaUsu= prompt ("Introduzca su contraseña: ")
+        
+            if (entradaUsu ===  password){
+                confirmacion= true;
+            }else{
+                intentos++;
+            }
+        
+        }
+
+        console.log (confirmacion       ?"Acceso concedido! entrando al sistema"
+                                        :"Has superado el numero de intentos posibles. SALIENDO"
+                    )
+
+        console.log("Ejercicio IA:  ___________________________________________________________")
+
+
+        /*Ejercicio propuesto IA:
+        El programa elige un número aleatorio del 1 al 10.
+        Pide al usuario con prompt() que adivine.
+        
+        Mientras no acierte:
+
+        Si el número del usuario es menor, muestra “Demasiado bajo”.
+        Si es mayor, “Demasiado alto”.
+        Vuelve a pedir.
+
+        Al acertar, muestra: “¡Correcto en X intentos!”.
+        */
+
+        //generar numero aleatorio:
+        const secreto = Math.floor(Math.random()*10) + 1;
+
+        //creamos variable para almacenar el numero del usu
+        let numeroUsu = Number(prompt ("Introduzca un numero del 1 al 10:"))
+
+        //y un contador que se actualice:
+        let contador=0;
+
+        console.log(secreto);
+
+
+        while ( numeroUsu != secreto){
+            alert("Error. Numero incorrecto: ")
+            contador++;
+            if (numeroUsu>secreto) alert("El numero secreto es mas pequeño!");
+            else if (numeroUsu<secreto)alert("El numero secreto es mas grande!");
+            numeroUsu = Number(prompt("Por favor, introduzca un número del 1 al 10!"));
+
+        }
+
+        console.log (` Has acertado el numero secreto en: ${contador} intentos`)
+        
+
+        
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
