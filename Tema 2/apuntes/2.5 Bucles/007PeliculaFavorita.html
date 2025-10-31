@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*
+        🎯 Objetivo:
+
+        Crear un programa que pregunte al usuario por su película favorita y vaya guardando todas las respuestas en un array, hasta que escriba 
+        “salir”.        Al final, debe mostrar:
+
+        La lista completa de películas introducidas.
+        Cuántas personas participaron (número de entradas en el array).
+    */
+
+    let peliculas=[];
+    let respuesta;
+
+    do{
+        respuesta= prompt ("Escriba una pelicula. Si desea salir escriba SALIR");
+
+        if (respuesta.toLowerCase() != "salir"){
+            peliculas.push(respuesta);
+        }
+    }while(respuesta.toLowerCase()!="salir")
+
+    console.log ("Peliculas introducidas: ")
+    for (let peli of peliculas){
+        console.log ("-"+ peli)
+
+    }
+
+    console.log (`Haciendo un total de: ${peliculas.length} peliculas`)
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

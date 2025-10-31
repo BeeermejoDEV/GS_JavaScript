@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //         🎯 Objetivo:
+
+        // Analizar una lista de precios y obtener: hecho
+
+        // El total de todos los productos.         hecho   
+
+        // Cuántos superan los 300 €.               Hecho
+
+        // Si el total supera 1000 €, aplicar 10 % de descuento.
+
+        // 💻 Datos:
+
+
+        /*
+            SECCION DE FALLOS POST CORREGIR:
+                al multiplicar, use 1,1 en vez de 1.1 por lo que la operacion no se realizaba.
+        */
+    
+    
+        const precios = [120, 450, 300, 700, 50, 200];
+        let total=0;
+        let contador=0;
+        let descuento=0.0;
+        let totalDescuento=0.0;
+
+        for (let i= 0; i<precios.length;    i++){
+            console.log (`${i}. ${precios[i]}`) //aqui muestro una lista de precios
+            total = total + precios[i];
+            
+            if (precios[i]>=300) contador++;
+            if (total>1000){
+                Number(descuento= total*0.1)
+                Number(totalDescuento= total-descuento)
+            }
+            
+
+        }
+
+        console.log (` El precio total del stock es: ${total} euros`)
+        console.log (`Hay ${contador} productos que superan/igualan los 300 euros`)
+
+        if(totalDescuento ==0){
+            console.log("No se aplico ningun descuento")
+        }else{
+            console.log(`Al superar los 1000 euros... se ha aplicado un descuento automaticamente!!\nTeniendo un nuevo precio de: ${totalDescuento}\nHabiendose descontado: ${descuento} euros del total`)        
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

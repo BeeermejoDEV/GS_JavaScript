@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>    
+    /*
+    🎯 Objetivo:
+
+    Tienes un objeto con las notas de un alumno y quieres mostrar:
+        1️⃣ Cada asignatura con su nota.
+        2️⃣ La media total de todas las asignaturas.
+    */
+
+    let suma=0;
+    let media=0;
+    let contador=0;
+
+
+    const alumno={
+        nombre: "David",
+        notas:{
+            matematicas:    8,
+            historia:       7,
+            ingles:         3,
+            biologia:       6
+        }
+    }
+
+    for (let materia in alumno.notas ){ //para acceder a notas, llamamos al array alumno y luego al array notas: alumno.notas
+        console.log (`${materia}: ${alumno.notas[materia]}`)
+
+        if(alumno.notas[materia]<=5) console.log (`Cuidado!! en ${materia} has sacado un ${alumno.notas[materia]} `)
+        suma= suma+ alumno.notas[materia]
+        contador++;
+    }
+    
+    media=suma/contador
+    console.log(`La media del alumno es de: ${media}`)
+    console.log(contador)
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
