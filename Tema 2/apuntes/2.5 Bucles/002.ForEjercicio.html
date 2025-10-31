@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>    
+    /*
+    Pide con un for:
+
+        Máximo                      ///     Mínimo
+        Media (suma / cantidad)     ///     Cuántas son > 25*/
+
+    let temps =[12,14,18,41,37,24,9,17];
+
+    let max= temps[0];
+    let min= temps[0];
+    let suma= 0;
+    let contador =0;
+    //mayor25;
+
+    for(let i=0; i< temps.length; i++){ 
+        console.log(temps[i])
+
+        if (temps[i]< min)  min=temps[i];
+
+        if (temps[i]> max)  max=temps[i];
+
+        suma= suma + temps[i];
+        media = suma/temps.length
+
+        if (temps[i]>25) contador++;
+
+    }
+    
+    console.log (`La temperatura maxima es de: ${max} grados`)
+    console.log (`La temperatura minima es de: ${min} grados`)
+    console.log (`La media de temperaturas es de:  ${media} grados`)
+    console.log (`Hay ${contador} temperaturas que superan los 25 grados`)
+  
+  
+    </script>
+    
+</body>
+</html>
