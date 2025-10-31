@@ -15,32 +15,36 @@
         Media (suma / cantidad)     ///     Cuántas son > 25*/
 
     let temps =[12,14,18,41,37,24,9,17];
-
-    let max= temps[0];
-    let min= temps[0];
+    let max = temps[0]
+    let min = temps[0]
     let suma= 0;
-    let contador =0;
-    //mayor25;
+    let contador=0;
 
-    for(let i=0; i< temps.length; i++){ 
+    for (let i=0;   i<temps.length; i++){
         console.log(temps[i])
 
-        if (temps[i]< min)  min=temps[i];
+        //buscar la temperatura maxima:
+        if (temps[i]> max)  max= temps[i]
 
-        if (temps[i]> max)  max=temps[i];
+        //buscar temperatura minima:
+        if (temps[i]<min)   min=temps[i]
 
-        suma= suma + temps[i];
-        media = suma/temps.length
+        //sumar todas las temperaturas:
+        suma= suma+ temps[i];
+        media= suma/temps.length
 
-        if (temps[i]>25) contador++;
-
+        //cuantos +25 grados:
+        if(temps[i]>=25) contador++;
     }
     
-    console.log (`La temperatura maxima es de: ${max} grados`)
-    console.log (`La temperatura minima es de: ${min} grados`)
-    console.log (`La media de temperaturas es de:  ${media} grados`)
-    console.log (`Hay ${contador} temperaturas que superan los 25 grados`)
-  
+
+    console.log(`La temperatura minima es de: ${min} y la temperatura maxima es de: ${max}`)
+    console.log(`La suma de todas las temperaturas es de: ${suma}. Haciendo una media de: ${media} grados en total`)
+    console.log(`Y hay ${contador} dias que la temperatura ha sido mayor de 25 grados`)
+    
+    
+    
+ 
   
     </script>
     
